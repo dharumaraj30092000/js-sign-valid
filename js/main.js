@@ -1,8 +1,5 @@
 var array=[];
 var signInfo={};
-localStorage.setItem('array',JSON.stringify(array));
-var storage=JSON.parse(localStorage.getItem('array'));
-console.log(storage);
 var userBtn=document.getElementById("get");
 var urClick=document.getElementById("create");
 var goForgot=document.getElementById("tochange");
@@ -133,7 +130,7 @@ undo.addEventListener("click",function() {
 	click.style.display="block";
 	headerCont.style.display="block";
     wel.style.display="block";
-	urClick.style.display="block";
+	urClick.style.display="none";
 	home.style.display="none";
 	userEmail.value="";
 	userPass.value="";
